@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Registro de lugares</string>
+    <string name="label_instrucciones">Registra tu lugar (todos los datos son obligatorios)</string>
+    <string name="label_nombre">Nombre del lugar</string>
+    <string name="label_localidad">Localidad</string>
+    <string name="label_region">Región</string>
+    <string name="label_pais">País</string>
+    <string name="label_descripcion">Descripción</string>
+    <string name="btn_guardar">Guardar Registro</string>
+    <string name="btn_registro">Registrar Lugar</string>
+    <string name="btn_ver_lugares">Ver Lugares</string>
+    <string name="btnFirebase">Guardar en Firebase</string>
+    <string name="cargar_db_firebase">Cargar DB Firebase</string>
+    <string name="cargar_db">Cargar DB</string>
+</resources>

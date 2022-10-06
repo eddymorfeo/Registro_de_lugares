@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230879884544",
+    "project_id": "app-registro-de-lugares-24de4",
+    "storage_bucket": "app-registro-de-lugares-24de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230879884544:android:cde5422e1267f95353afe5",
+        "android_client_info": {
+          "package_name": "cl.aiep.android.registrodelugares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230879884544-4toutid11hjme076a31vtubsim8shsn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmNoiTo4_uxIgo2HOa4XWn2bKLgZw_4II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230879884544-4toutid11hjme076a31vtubsim8shsn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
