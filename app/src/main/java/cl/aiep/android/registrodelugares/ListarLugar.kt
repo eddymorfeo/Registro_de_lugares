@@ -3,6 +3,7 @@ package cl.aiep.android.registrodelugares
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import cl.aiep.android.registrodelugares.adaptador.LugaresAdapter
 import cl.aiep.android.registrodelugares.bd.Constantes
@@ -75,16 +76,21 @@ class ListarLugar : AppCompatActivity() {
 
         }else{
             //Basae de datos local
+            mostrarDataEnLista(listaData)
         }
     }
 
     private fun mostrarDataEnLista(listaData: ArrayList<Lugares>) {
         //Creamos el adaptador con la data que recibimos
-        val adaptadorDataLugares = LugaresAdapter(listaData.toList())
+        val adaptadorDataLugares = LugaresAdapter(listaData)
         //Vamos a configurar la lista del RecyclerView
         binding.listaData.apply {
             // vertical layout
             layoutManager = LinearLayoutManager(applicationContext)
+
+            //GridLayaout, el numero final indica la cantidad de columnas que mostrara
+            //layoutManager = GridLayoutManager(applicationContext, 2)
+
             // set adapter
             adapter = adaptadorDataLugares
             //adaptadorDataLugares.notifyDataSetChanged()
