@@ -3,6 +3,7 @@ package cl.aiep.android.registrodelugares
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.constraintlayout.widget.ConstraintSet.GONE
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import cl.aiep.android.registrodelugares.adaptador.LugaresAdapter
@@ -37,6 +38,8 @@ class ListarLugar : AppCompatActivity() {
         }
 
         binding.btnCargarBDFirebase.setOnClickListener {
+            binding.listaData.visibility= GONE
+            binding.progressBar.visibility= GONE
             listarData(FIREBASE)
         }
     }
@@ -50,6 +53,7 @@ class ListarLugar : AppCompatActivity() {
             val db = Firebase.firestore
             //Que tabla vamos a obtener
             db.collection(TABLA_LUGARES)
+                .orderBy("nombre")
                 .get()
                 .addOnSuccessListener { result ->
                     //Si la data es correcta, vamos hacer un for para recorrerla
@@ -83,6 +87,8 @@ class ListarLugar : AppCompatActivity() {
     private fun mostrarDataEnLista(listaData: ArrayList<Lugares>) {
         //Creamos el adaptador con la data que recibimos
         val adaptadorDataLugares = LugaresAdapter(listaData)
+        //Vamos a setear la cantidad de datos
+        binding.txtLabel.text = "Tienes Registrado ${listaData.size} Lugares"
         //Vamos a configurar la lista del RecyclerView
         binding.listaData.apply {
             // vertical layout

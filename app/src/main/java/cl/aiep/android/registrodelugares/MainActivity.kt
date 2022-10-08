@@ -17,4 +17,7 @@ class MainActivity : AppCompatActivity() {
     fun mostrarLugares(view: View) {
         startActivity(Intent(this, ListarLugar::class.java))
     }
+    /*fun mostrarLugares(view: View) {
+        startActivity(Intent(this, MapsActivity::class.java))
+    }*/
 }

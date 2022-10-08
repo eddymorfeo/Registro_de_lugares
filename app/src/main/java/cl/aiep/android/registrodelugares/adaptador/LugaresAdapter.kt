@@ -3,7 +3,9 @@ package cl.aiep.android.registrodelugares.adaptador
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import cl.aiep.android.registrodelugares.R
 import cl.aiep.android.registrodelugares.classes.Lugares
@@ -17,12 +19,14 @@ class LugaresAdapter(val listaLugar: List<Lugares>) : RecyclerView.Adapter<Lugar
         val txtNombre: TextView
         val txtLocalidad: TextView
         val txtDescripcion: TextView
+        val btnBorrar: Button
 
         init {
             // Define click listener for the ViewHolder's View.
             txtNombre = view.findViewById(R.id.txtNombre)
             txtLocalidad = view.findViewById(R.id.txtLocalidad)
             txtDescripcion = view.findViewById(R.id.txtDescripcion)
+            btnBorrar = view.findViewById(R.id.btnBorrarRegistro)
         }
     }
 
@@ -44,6 +48,10 @@ class LugaresAdapter(val listaLugar: List<Lugares>) : RecyclerView.Adapter<Lugar
         holder.txtLocalidad.text = listaLugar.get(position).localidad
         //Descripcion
         holder.txtDescripcion.text = listaLugar.get(position).descripcion
+        //Accion al boton Borrar
+        holder.btnBorrar.setOnClickListener {
+            Toast.makeText(holder.btnBorrar.context,"Click en la Posición $position", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int {
