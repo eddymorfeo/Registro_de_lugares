@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/EDWARD/AndroidStudioProjects/Registrodelugares/app/src/main/res/drawable/ic_info.xml" value="0.1955" />
         <entry key="..\:/Users/EDWARD/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/activity_listar_lugar.xml" value="0.25" />
         <entry key="..\:/Users/EDWARD/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/activity_registrar_lugar.xml" value="0.25" />
-        <entry key="..\:/Users/EDWARD/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/item_lista.xml" value="0.33" />
+        <entry key="..\:/Users/EDWARD/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/item_lista.xml" value="0.44689119170984454" />
         <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/activity_listar_lugar.xml" value="0.2421875" />
         <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/activity_main.xml" value="0.228125" />
         <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodelugares/app/src/main/res/layout/activity_registrar_lugar.xml" value="0.2421875" />

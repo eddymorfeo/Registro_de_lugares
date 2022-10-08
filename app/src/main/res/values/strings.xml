@@ -12,4 +12,7 @@
     <string name="btnFirebase">Guardar en Firebase</string>
     <string name="cargar_db_firebase">Cargar DB Firebase</string>
     <string name="cargar_db">Cargar DB</string>
+    <string name="nombre_del_lugar">Nombre del Lugar</string>
+    <string name="localidad">Localidad</string>
+    <string name="descripcion">Descripcion</string>
 </resources>

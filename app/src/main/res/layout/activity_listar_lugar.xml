@@ -40,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaData"
         android:layout_width="368dp"
         android:layout_height="583dp"
         android:layout_marginStart="16dp"
